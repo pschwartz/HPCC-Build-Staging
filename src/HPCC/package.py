@@ -14,6 +14,9 @@ class Package(object):
                                         self.build)
 
     def toDict(self):
+        '''
+        Return of a dictionary that is used to build json.
+        '''
         dictVer = self.version + '-' + self.build
         dictRepr = {
             "Download_Size": "",
