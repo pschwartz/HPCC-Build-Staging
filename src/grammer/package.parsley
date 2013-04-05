@@ -1,0 +1,28 @@
+package = base '-' name:p '_' project:n '-' version:v '-'
+          build:b dist:d
+          -> {'package':p, 'project':n, 'version':v,
+              'build':b, 'dist':d}
+
+base = string
+name = string
+project = npart1
+build = npart2
+
+version = number:M '.' number:m '.' number:p
+          -> "{0}.{1}.{2}".format(M,m,p)
+
+number = <digit+>:n -> int(n)
+
+dist = '.'? pkg_version:v seperator pkg_arch:a '.' ext:e
+       -> (v, a, e)
+
+seperator = ('.' | '_' | '-')
+
+string = <npart1+>
+npart1 = <letterOrDigit+>:n ~~(seperator | end) -> n
+npart2 = <(~pkg_version letterOrDigit)+>:n -> n
+npart3 = <(letterOrDigit | '_')+>:n ~~('.') -> n
+
+pkg_version = npart1:x ?(x in version) -> x
+pkg_arch = npart3:x ?(x in arch) -> x
+ext = npart1:x ?(x in ext) -> x
