@@ -30,6 +30,5 @@ def make_json_app(import_name, **kwargs):
 
     return app
 
-
 api = make_json_app(__name__)
 from api import views
