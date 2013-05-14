@@ -1,3 +1,4 @@
+from __future__ import print_function
 import hashlib
 import os
 
@@ -48,7 +49,7 @@ class Package(object):
             "Type": self.package,
             "Edge_Cast_Path": "",
             "OS": "Ubuntu",
-            "MD5": ""
+            "MD5": "" #self.localCache['md5']
         }
         return dictRepr
 

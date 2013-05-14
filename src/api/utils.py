@@ -1,4 +1,17 @@
 class Registry(object):
+    api = None
+    cache = dict()
+
+    def __init__(self, api):
+        self.api = api
+
+    @staticmethod
+    def build_url(url, pk=None):
+        if type(pk) is not list:
+            return url + '/'
+        keyStr = ['<{}:{}>'.format(x, y) for x, y in pk]
+        return url + '/' + '/'.join(keyStr)
+
     @staticmethod
     def register_get(api, view, endpoint, url, pk='id', pk_type='int'):
         view_func = view.as_view(endpoint)

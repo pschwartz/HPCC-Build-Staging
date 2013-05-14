@@ -1,0 +1,6 @@
+Build Staging:
+ ✔ Build config system based on json @done (13-05-14 11:50)
+ ☐ Build out api for release generation
+ ☐ Build out api for single file access
+ ☐ Build out tests for staging
+ ☐ Clean up package class to use a config object to build package dict.

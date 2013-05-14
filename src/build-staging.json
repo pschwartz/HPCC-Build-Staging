@@ -1,0 +1,262 @@
+{
+    "arch": [
+        "i686",
+        "x86_64",
+        "i386",
+        "amd64"
+        ],
+    "Platforms": [
+        {
+            "OS": "centos",
+            "name": "Centos",
+            "ext": ["rpm"],
+            "versions": [
+                {
+                    "version": "el5",
+                    "install": "platform",
+                    "title": "HPCC Platform Centos5/RHEL5",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "el6",
+                    "install": "platform",
+                    "title": "HPCC Platform Centos6/RHEL6",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "el5",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Centos5/RHEL5",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "el6",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Centos6/RHEL6",
+                    "text": "",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "OS": "debian",
+            "name": "Debian",
+            "ext": ["deb"],
+            "versions": [
+                {
+                    "version": "squeeze",
+                    "install": "platform",
+                    "title": "HPCC Platform Debian Squeeze",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "wheezy",
+                    "install": "platform",
+                    "title": "HPCC Platform Debian Wheezy",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "squeeze",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Debian Squeeze",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "wheezy",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Debian Wheezy",
+                    "text": "",
+                    "link": ""
+                }
+            ]
+
+        },
+        {
+            "OS": "mac",
+            "name": "MacOSX",
+            "ext": ["dmg"],
+            "versions": [
+                {
+                    "version": "Darwin",
+                    "install": "clienttools",
+                    "title": "Client Tools for Mac OSX",
+                    "text": "",
+                    "link": ""
+                }
+            ]
+
+        },
+        {
+            "OS": "opensuse",
+            "name": "OpenSUSE",
+            "ext": ["rpm"],
+            "versions": [
+                {
+                    "version": "suse12.3",
+                    "install": "platform",
+                    "title": "HPCC Platform OpenSUSE 12.3",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "suse12.3",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools OpenSUSE 12.3",
+                    "text": "",
+                    "link": ""
+                }
+            ]
+
+        },
+        {
+            "OS": "ubuntu",
+            "name": "Ubuntu",
+            "ext": ["deb"],
+            "versions": [
+                {
+                    "version": "lucid",
+                    "install": "platform",
+                    "title": "HPCC Platform Ubuntu 10.04 LTS",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "natty",
+                    "install": "platform",
+                    "title": "HPCC Platform Ubuntu 11.04",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "oneiric",
+                    "install": "platform",
+                    "title": "HPCC Platform Ubuntu 11.10",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "precise",
+                    "install": "platform",
+                    "title": "HPCC Platform Ubuntu 12.04 LTS",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "quantal",
+                    "install": "platform",
+                    "title": "HPCC Platform Ubuntu 12.10",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "raring",
+                    "install": "platform",
+                    "title": "HPCC Platform Ubuntu 13.04",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "lucid",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Ubuntu 10.04 LTS",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "natty",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Ubuntu 11.04",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "oneiric",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Ubuntu 11.10",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "precise",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Ubuntu 12.04 LTS",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "quantal",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Ubuntu 12.10",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "version": "raring",
+                    "install": "clienttools",
+                    "title": "HPCC Client Tools Ubuntu 13.04",
+                    "text": "",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "OS": "windows",
+            "name": "Windows",
+            "ext": ["msi", "exe"],
+            "versions": [
+                {
+                    "id": "ECLIDE",
+                    "version": "Windows",
+                    "install": "ide",
+                    "title": "ECL IDE and Client Tools for Windows",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "id": "GraphControl.",
+                    "version": "Windows",
+                    "install": "graphcontrol",
+                    "title": "Graph Control for Windows 32 bit",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "id": "GraphControl64",
+                    "version": "Windows",
+                    "install": "graphcontrol",
+                    "title": "Graph Control for Windows 64 bit",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "id": "eclide",
+                    "version": "Windows",
+                    "install": "clienttools",
+                    "title": "Clienttools for windows.",
+                    "text": "",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "OS": "all",
+            "name": "all",
+            "ext": ["zip"],
+            "versions": [
+                {
+                    "version": "VM",
+                    "install": "VM",
+                    "title": "HPCC VM Image",
+                    "text": "Release Notes",
+                    "link": "/downloads/vm-release-notes#"
+                }
+            ]
+        }
+    ]
+}

@@ -25,7 +25,6 @@ def make_json_app(import_name, **kwargs):
     app = Flask(import_name, **kwargs)
 
     for code in default_exceptions.iterkeys():
-        print code
         app.error_handler_spec[None][code] = make_json_error
 
     return app
